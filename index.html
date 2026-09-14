@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mercearia do Seu Zé — há mais de 40 anos no Centro de Curitiba. Café moído na hora, queijos e salames coloniais, pães e doces do interior do Paraná. Endereço, horário e WhatsApp.">
+  <meta name="keywords" content="mercearia, centro curitiba, produtos coloniais, café moído, mercado, conveniência, empório">
+  <meta name="theme-color" content="#0e0d0b">
+  <title>Mercearia do Seu Zé | Centro de Curitiba</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== CABEÇALHO ===== -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand" aria-label="Página inicial da Mercearia do Seu Zé">
+        <span class="brand-mark">Seu Zé</span>
+        <span class="brand-sub">Mercearia · Curitiba</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#historia">História</a></li>
+          <li><a href="#visite">Visite</a></li>
+          <li><a href="produtos.html">Catálogo</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-right">
+        <a class="header-cta" href="https://wa.me/5541991234567" target="_blank" rel="noopener">Pedir no WhatsApp</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="inicio">
+      <img class="hero-img" src="assets/img/hero.jpg" alt="Balcão da mercearia com lâmpadas de filamento e produtos expostos" fetchpriority="high">
+      <div class="hero-shade" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <p class="hero-kicker reveal">Centro Histórico de Curitiba · desde 1983</p>
+        <h1 class="hero-title reveal">
+          Café moído na hora.<br>
+          Queijo da colônia.<br>
+          <em>Pão que ainda está quente.</em>
+        </h1>
+        <div class="hero-bottom reveal">
+          <p class="hero-lead">
+            Uma mercearia de bairro a dois passos do Calçadão da XV, com produtos
+            do interior do Paraná e atendimento que chama você pelo nome.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#produtos">Ver produtos</a>
+            <a class="btn btn-line" href="#visite">Como chegar</a>
+          </div>
+        </div>
+      </div>
+
+      <p class="hero-status" id="status-loja" aria-live="polite">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span class="status-text">Verificando horário…</span>
+      </p>
+    </section>
+
+    <!-- ===== BARRA DE INFORMAÇÕES ESSENCIAIS ===== -->
+    <section class="infobar" aria-label="Endereço, horário e contato">
+      <div class="infobar-item">
+        <span class="infobar-label">Endereço</span>
+        <span class="infobar-value">Rua Marechal Deodoro, 452 — Centro</span>
+        <span class="infobar-note">2 quadras do Calçadão da XV · próx. Boca Maldita</span>
+      </div>
+      <div class="infobar-item">
+        <span class="infobar-label">Horário</span>
+        <span class="infobar-value">Seg–Sex 7h–19h · Sáb 7h–14h</span>
+        <span class="infobar-note">Domingos e feriados fechado</span>
+      </div>
+      <div class="infobar-item">
+        <span class="infobar-label">Contato</span>
+        <span class="infobar-value"><a href="https://wa.me/5541991234567">(41) 99123-4567</a> · <a href="tel:+554132224040">(41) 3222-4040</a></span>
+        <span class="infobar-note">WhatsApp e telefone fixo</span>
+      </div>
+    </section>
+
+    <!-- ===== HISTÓRIA (resumo) ===== -->
+    <section id="historia" class="split">
+      <figure class="split-media reveal">
+        <img src="assets/img/caixotes.jpg" alt="Caixotes de madeira com legumes e verduras frescas" loading="lazy">
+      </figure>
+      <div class="split-copy">
+        <p class="kicker reveal">Nossa história</p>
+        <h2 class="display reveal">Quarenta anos de balcão, caderninho e conversa boa.</h2>
+        <p class="reveal">
+          Quando o Seu Zé ergueu as portas de ferro pela primeira vez, o Centro de
+          Curitiba tinha outro ritmo. O que não mudou foi o cheiro do café moído na
+          hora, as prateleiras de madeira e os produtos que chegam toda semana de
+          Witmarsum, Colombo, Castelhanos e do Norte Pioneiro.
+        </p>
+        <p class="reveal">
+          Hoje, o neto Lucas trouxe a mercearia para a internet. O balcão continua o mesmo.
+        </p>
+        <a class="link reveal" href="sobre.html">Ler a história completa</a>
+      </div>
+    </section>
+
+    <!-- ===== FAIXA ROLANTE ===== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Café moído na hora</span><span>Queijo colonial</span><span>Salame de Castelhanos</span><span>Pão caseiro</span><span>Mel silvestre</span><span>Erva-mate</span><span>Geleia artesanal</span><span>Vinho colonial</span>
+        <span>Café moído na hora</span><span>Queijo colonial</span><span>Salame de Castelhanos</span><span>Pão caseiro</span><span>Mel silvestre</span><span>Erva-mate</span><span>Geleia artesanal</span><span>Vinho colonial</span>
+      </div>
+    </div>
+
+    <!-- ===== PRODUTOS EM DESTAQUE ===== -->
+    <section id="produtos" class="products">
+      <div class="section-head">
+        <div>
+          <p class="kicker reveal">Da colônia para o balcão</p>
+          <h2 class="display reveal">Promoções da semana</h2>
+        </div>
+        <a class="link reveal" href="produtos.html">Catálogo completo</a>
+      </div>
+
+      <ul class="product-grid">
+        <li class="product reveal">
+          <a href="produtos.html" class="product-link">
+            <div class="product-media"><img src="assets/img/cafe.jpg" alt="Grãos de café torrados" loading="lazy"></div>
+            <div class="product-info">
+              <h3>Café moído na hora</h3>
+              <p class="product-meta">Norte Pioneiro · 500 g</p>
+              <p class="product-price"><s>R$ 28,90</s> R$ 24,90</p>
+            </div>
+          </a>
+        </li>
+        <li class="product reveal">
+          <a href="produtos.html" class="product-link">
+            <div class="product-media"><img src="assets/img/queijo.jpg" alt="Peças de queijo colonial" loading="lazy"></div>
+            <div class="product-info">
+              <h3>Queijo colonial</h3>
+              <p class="product-meta">Witmarsum · kg</p>
+              <p class="product-price"><s>R$ 62,00</s> R$ 54,90</p>
+            </div>
+          </a>
+        </li>
+        <li class="product reveal">
+          <a href="produtos.html" class="product-link">
+            <div class="product-media"><img src="assets/img/salame.jpg" alt="Salame fatiado com alecrim" loading="lazy"></div>
+            <div class="product-info">
+              <h3>Salame tipo italiano</h3>
+              <p class="product-meta">Colônia Castelhanos · kg</p>
+              <p class="product-price"><s>R$ 79,90</s> R$ 69,90</p>
+            </div>
+          </a>
+        </li>
+        <li class="product reveal">
+          <a href="produtos.html" class="product-link">
+            <div class="product-media"><img src="assets/img/pao.jpg" alt="Pães rústicos com sementes" loading="lazy"></div>
+            <div class="product-info">
+              <h3>Pão caseiro de milho</h3>
+              <p class="product-meta">Produção própria · unidade</p>
+              <p class="product-price"><s>R$ 14,00</s> R$ 11,90</p>
+            </div>
+          </a>
+        </li>
+        <li class="product reveal">
+          <a href="produtos.html" class="product-link">
+            <div class="product-media"><img src="assets/img/mel.jpg" alt="Mel escorrendo em pote de vidro" loading="lazy"></div>
+            <div class="product-info">
+              <h3>Mel de abelha silvestre</h3>
+              <p class="product-meta">Ortigueira · 500 g</p>
+              <p class="product-price"><s>R$ 38,00</s> R$ 34,00</p>
+            </div>
+          </a>
+        </li>
+        <li class="product reveal">
+          <a href="produtos.html" class="product-link">
+            <div class="product-media"><img src="assets/img/temperos.jpg" alt="Temperos e especiarias sobre mesa de madeira" loading="lazy"></div>
+            <div class="product-info">
+              <h3>Temperos a granel</h3>
+              <p class="product-meta">Diversos · 100 g</p>
+              <p class="product-price"><s>R$ 7,50</s> R$ 6,00</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===== CITAÇÃO ===== -->
+    <section class="quote">
+      <img class="quote-bg" src="assets/img/natureza-morta.jpg" alt="" loading="lazy" aria-hidden="true">
+      <blockquote class="reveal">
+        <p>“Quem quer comprar, vem até a loja.”</p>
+        <footer>— Seu Zé, que agora também atende pelo WhatsApp</footer>
+      </blockquote>
+    </section>
+
+    <!-- ===== VISITE ===== -->
+    <section id="visite" class="visit">
+      <div class="visit-grid">
+        <figure class="visit-media reveal">
+          <img src="assets/img/fachada.jpg" alt="Fachada iluminada de uma loja de esquina à noite" loading="lazy">
+        </figure>
+
+        <div class="visit-copy">
+          <p class="kicker reveal">Visite</p>
+          <h2 class="display reveal">Perto de tudo no Centro.</h2>
+
+          <div class="visit-block reveal" id="localizacao">
+            <h3>Endereço</h3>
+            <address>
+              Rua Marechal Deodoro, 452 — Centro<br>
+              Curitiba/PR · CEP 80010-010
+            </address>
+            <p class="muted">A duas quadras do Calçadão da XV, entre a Praça Osório e a Boca Maldita. Estações-tubo Praça Osório e Rui Barbosa a menos de 10 min a pé.</p>
+            <a class="link" href="https://www.google.com/maps/search/?api=1&query=Rua+Marechal+Deodoro+452+Centro+Curitiba+PR" target="_blank" rel="noopener">Abrir no Google Maps</a>
+          </div>
+
+          <div class="visit-block reveal" id="horario">
+            <h3>Horário</h3>
+            <ul class="hours" id="lista-horario">
+              <li data-dia="1"><span>Segunda</span><span>07:00 — 19:00</span></li>
+              <li data-dia="2"><span>Terça</span><span>07:00 — 19:00</span></li>
+              <li data-dia="3"><span>Quarta</span><span>07:00 — 19:00</span></li>
+              <li data-dia="4"><span>Quinta</span><span>07:00 — 19:00</span></li>
+              <li data-dia="5"><span>Sexta</span><span>07:00 — 19:00</span></li>
+              <li data-dia="6"><span>Sábado</span><span>07:00 — 14:00</span></li>
+              <li data-dia="0"><span>Domingo e feriados</span><span>Fechado</span></li>
+            </ul>
+          </div>
+
+          <div class="visit-block reveal" id="contato">
+            <h3>Contato</h3>
+            <div class="visit-actions">
+              <a class="btn" href="https://wa.me/5541991234567" target="_blank" rel="noopener">WhatsApp (41) 99123-4567</a>
+              <a class="btn btn-line" href="tel:+554132224040">(41) 3222-4040</a>
+            </div>
+            <p class="muted"><a href="mailto:contato@merceariadoseuze.com.br">contato@merceariadoseuze.com.br</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="map">
+        <iframe
+          title="Mapa com a localização da Mercearia do Seu Zé"
+          src="https://www.google.com/maps?q=Rua+Marechal+Deodoro+452,+Centro,+Curitiba+-+PR&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== RODAPÉ ===== -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <p class="footer-big">Até logo.</p>
+      <div class="footer-cols">
+        <div>
+          <h4>Mercearia do Seu Zé</h4>
+          <p>Rua Marechal Deodoro, 452<br>Centro, Curitiba/PR</p>
+        </div>
+        <div>
+          <h4>Navegue</h4>
+          <a href="#produtos">Produtos</a>
+          <a href="produtos.html">Catálogo</a>
+          <a href="sobre.html">Nossa história</a>
+          <a href="#visite">Visite</a>
+        </div>
+        <div>
+          <h4>Redes</h4>
+          <ul class="social-links" aria-label="Redes sociais">
+            <li><a href="https://instagram.com/merceariadoseuze" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://facebook.com/merceariadoseuze" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="https://wa.me/5541991234567" target="_blank" rel="noopener">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="ano-atual">2026</span> Mercearia do Seu Zé. Todos os direitos reservados.</p>
+      <p>Site por Daniel Ribeiro da Costa, Lucas Markovicz Costa e Ricardo Medeiros Marcato — Eng. de Software, Universidade Positivo.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
