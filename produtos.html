@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catálogo da Mercearia do Seu Zé, no Centro de Curitiba: café, queijos, salames, pães, doces, conservas e bebidas do interior do Paraná.">
+  <meta name="theme-color" content="#0e0d0b">
+  <title>Catálogo | Mercearia do Seu Zé</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== CABEÇALHO ===== -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand" aria-label="Página inicial da Mercearia do Seu Zé">
+        <span class="brand-mark">Seu Zé</span>
+        <span class="brand-sub">Mercearia · Curitiba</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html#produtos">Produtos</a></li>
+          <li><a href="index.html#historia">História</a></li>
+          <li><a href="index.html#visite">Visite</a></li>
+          <li><a href="produtos.html">Catálogo</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-right">
+        <a class="header-cta" href="https://wa.me/5541991234567" target="_blank" rel="noopener">Pedir no WhatsApp</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <img src="assets/img/padaria.jpg" alt="Vitrine de padaria com pães e folhados" fetchpriority="high">
+      <div class="page-hero-content">
+        <p class="kicker reveal">Catálogo</p>
+        <h1 class="display reveal">Tudo o que chega<br><em>do interior.</em></h1>
+        <p class="muted reveal">Preços de referência. Para reservar, chame no WhatsApp e retire na loja.</p>
+      </div>
+    </section>
+
+    <section class="catalog">
+      <form class="filters" role="search" onsubmit="return false;">
+        <input type="search" id="busca-produto" aria-label="Buscar produto" placeholder="Buscar — ex.: queijo, café, mel" autocomplete="off">
+        <button type="button" class="filtro-btn ativo" data-categoria="todos">Todos</button>
+        <button type="button" class="filtro-btn" data-categoria="frios">Frios</button>
+        <button type="button" class="filtro-btn" data-categoria="padaria">Padaria</button>
+        <button type="button" class="filtro-btn" data-categoria="mercearia">Mercearia</button>
+        <button type="button" class="filtro-btn" data-categoria="doces">Doces</button>
+        <button type="button" class="filtro-btn" data-categoria="bebidas">Bebidas</button>
+      </form>
+
+      <ul class="catalog-grid" id="lista-produtos">
+        <li class="product reveal" data-categoria="frios">
+          <div class="product-media"><img src="assets/img/queijo.jpg" alt="Queijo colonial" loading="lazy" style="object-position: center;"></div>
+          <div class="product-info">
+            <h3>Queijo colonial</h3>
+            <p class="product-meta">Witmarsum · kg</p>
+            <p class="product-price"><s>R$ 62,00</s> R$ 54,90</p>
+          </div>
+        </li>
+        <li class="product reveal" data-categoria="frios">
+          <div class="product-media"><img src="assets/img/salame.jpg" alt="Salame tipo italiano" loading="lazy" style="object-position: center;"></div>
+          <div class="product-info">
+            <h3>Salame tipo italiano</h3>
+            <p class="product-meta">Colônia Castelhanos · kg</p>
+            <p class="product-price"><s>R$ 79,90</s> R$ 69,90</p>
+          </div>
+        </li>
+        <li class="product reveal" data-categoria="mercearia">
+          <div class="product-media"><img src="assets/img/cafe.jpg" alt="Café moído na hora" loading="lazy" style="object-position: center;"></div>
+          <div class="product-info">
+            <h3>Café moído na hora</h3>
+            <p class="product-meta">Norte Pioneiro · 500 g</p>
+            <p class="product-price"><s>R$ 28,90</s> R$ 24,90</p>
+          </div>
+        </li>
+        <li class="product reveal" data-categoria="padaria">
+          <div class="product-media"><img src="assets/img/pao.jpg" alt="Pão caseiro de milho" loading="lazy" style="object-position: center;"></div>
+          <div class="product-info">
+            <h3>Pão caseiro de milho</h3>
+            <p class="product-meta">Produção própria · unidade</p>
+            <p class="product-price"><s>R$ 14,00</s> R$ 11,90</p>
+          </div>
+        </li>
+        <li class="product reveal" data-categoria="doces">
+          <div class="product-media"><img src="assets/img/mel.jpg" alt="Mel de abelha silvestre" loading="lazy" style="object-position: center;"></div>
+          <div class="product-info">
+            <h3>Mel de abelha silvestre</h3>
+            <p class="product-meta">Ortigueira · 500 g</p>
+            <p class="product-price"><s>R$ 38,00</s> R$ 34,00</p>
+          </div>
+        </li>
+        <li class="product reveal" data-categoria="mercearia">
+          <div class="product-media"><img src="assets/img/temperos.jpg" alt="Temperos a granel" loading="lazy" style="object-position: center;"></div>
+          <div class="product-info">
+            <h3>Temperos a granel</h3>
+            <p class="product-meta">Diversos · 100 g</p>
+            <p class="product-price"><s>R$ 7,50</s> R$ 6,00</p>
+          </div>
+        </li>
+        <li class="product reveal" data-categoria="padaria">
+          <div class="product-media"><img src="assets/img/cuca.jpg" alt="Cuca de banana" loading="lazy" style="object-position: center;"></div>
+          <div class="product-info">
+            <h3>Cuca de banana</h3>
+            <p class="product-meta">Produção própria · unidade</p>
+            <p class="product-price">R$ 22,00</p>
+          </div>
+        </li>
+        <li class="product reveal" data-categoria="mercearia">
+          <div class="product-media"><img src="assets/img/tomates.jpg" alt="Tomate da colônia" loading="lazy" style="object-position: center;"></div>
+          <div class="product-info">
+            <h3>Tomate da colônia</h3>
+            <p class="product-meta">Colombo · kg</p>
+            <p class="product-price">R$ 8,90</p>
+          </div>
+        </li>
+        <li class="product reveal" data-categoria="frios">
+          <div class="product-media"><img src="assets/img/queijo.jpg" alt="Queijo minas frescal" loading="lazy" style="object-position: left top;"></div>
+          <div class="product-info">
+            <h3>Queijo minas frescal</h3>
+            <p class="product-meta">Castro · kg</p>
+            <p class="product-price">R$ 46,00</p>
+          </div>
+        </li>
+        <li class="product reveal" data-categoria="frios">
+          <div class="product-media"><img src="assets/img/salame.jpg" alt="Linguiça colonial defumada" loading="lazy" style="object-position: left top;"></div>
+          <div class="product-info">
+            <h3>Linguiça colonial defumada</h3>
+            <p class="product-meta">São José dos Pinhais · kg</p>
+            <p class="product-price">R$ 48,90</p>
+          </div>
+        </li>
+        <li class="product reveal" data-categoria="padaria">
+          <div class="product-media"><img src="assets/img/padaria.jpg" alt="Broa de fubá" loading="lazy" style="object-position: center;"></div>
+          <div class="product-info">
+            <h3>Broa de fubá</h3>
+            <p class="product-meta">Produção própria · unidade</p>
+            <p class="product-price">R$ 9,50</p>
+          </div>
+        </li>
+        <li class="product reveal" data-categoria="bebidas">
+          <div class="product-media"><img src="assets/img/vinho.jpg" alt="Vinho colonial tinto suave" loading="lazy" style="object-position: center;"></div>
+          <div class="product-info">
+            <h3>Vinho colonial tinto suave</h3>
+            <p class="product-meta">Colombo · 750 ml</p>
+            <p class="product-price">R$ 29,90</p>
+          </div>
+        </li>
+        <li class="product reveal" data-categoria="frios">
+          <div class="product-media"><img src="assets/img/legumes.jpg" alt="Ovos caipiras" loading="lazy" style="object-position: center;"></div>
+          <div class="product-info">
+            <h3>Ovos caipiras</h3>
+            <p class="product-meta">Campo Largo · dúzia</p>
+            <p class="product-price">R$ 15,00</p>
+          </div>
+        </li>
+        <li class="product reveal" data-categoria="mercearia">
+          <div class="product-media"><img src="assets/img/caixotes.jpg" alt="Feijão preto" loading="lazy" style="object-position: center;"></div>
+          <div class="product-info">
+            <h3>Feijão preto</h3>
+            <p class="product-meta">Irati · 1 kg</p>
+            <p class="product-price">R$ 10,90</p>
+          </div>
+        </li>
+        <li class="product reveal" data-categoria="mercearia">
+          <div class="product-media"><img src="assets/img/temperos.jpg" alt="Erva-mate para chimarrão" loading="lazy" style="object-position: left top;"></div>
+          <div class="product-info">
+            <h3>Erva-mate para chimarrão</h3>
+            <p class="product-meta">São Mateus do Sul · 1 kg</p>
+            <p class="product-price"><s>R$ 32,00</s> R$ 27,90</p>
+          </div>
+        </li>
+        <li class="product reveal" data-categoria="frios">
+          <div class="product-media"><img src="assets/img/cuca.jpg" alt="Manteiga caseira" loading="lazy" style="object-position: left top;"></div>
+          <div class="product-info">
+            <h3>Manteiga caseira</h3>
+            <p class="product-meta">Palmeira · 200 g</p>
+            <p class="product-price">R$ 16,90</p>
+          </div>
+        </li>
+        <li class="product reveal" data-categoria="doces">
+          <div class="product-media"><img src="assets/img/vinho.jpg" alt="Geleia de uva artesanal" loading="lazy" style="object-position: left top;"></div>
+          <div class="product-info">
+            <h3>Geleia de uva artesanal</h3>
+            <p class="product-meta">Colombo · 300 g</p>
+            <p class="product-price"><s>R$ 18,50</s> R$ 15,90</p>
+          </div>
+        </li>
+        <li class="product reveal" data-categoria="mercearia">
+          <div class="product-media"><img src="assets/img/sacola.jpg" alt="Sacola de feira da semana" loading="lazy" style="object-position: center;"></div>
+          <div class="product-info">
+            <h3>Sacola de feira da semana</h3>
+            <p class="product-meta">Seleção da casa · kit</p>
+            <p class="product-price">R$ 59,90</p>
+          </div>
+        </li>
+        <li class="product reveal" data-categoria="padaria">
+          <div class="product-media"><img src="assets/img/padaria.jpg" alt="Massa fresca de lasanha" loading="lazy" style="object-position: left top;"></div>
+          <div class="product-info">
+            <h3>Massa fresca de lasanha</h3>
+            <p class="product-meta">Santa Felicidade · 500 g</p>
+            <p class="product-price">R$ 18,90</p>
+          </div>
+        </li>
+        <li class="product reveal" data-categoria="mercearia">
+          <div class="product-media"><img src="assets/img/pao.jpg" alt="Farinha de milho biju" loading="lazy" style="object-position: left top;"></div>
+          <div class="product-info">
+            <h3>Farinha de milho biju</h3>
+            <p class="product-meta">Prudentópolis · 1 kg</p>
+            <p class="product-price">R$ 12,50</p>
+          </div>
+        </li>
+        <li class="product reveal" data-categoria="doces">
+          <div class="product-media"><img src="assets/img/cuca.jpg" alt="Doce de leite em pedaço" loading="lazy" style="object-position: right bottom;"></div>
+          <div class="product-info">
+            <h3>Doce de leite em pedaço</h3>
+            <p class="product-meta">Lapa · 400 g</p>
+            <p class="product-price">R$ 21,50</p>
+          </div>
+        </li>
+        <li class="product reveal" data-categoria="mercearia">
+          <div class="product-media"><img src="assets/img/legumes.jpg" alt="Legumes da estação" loading="lazy" style="object-position: left top;"></div>
+          <div class="product-info">
+            <h3>Legumes da estação</h3>
+            <p class="product-meta">Produtores da RMC · kg</p>
+            <p class="product-price">R$ 7,50</p>
+          </div>
+        </li>
+        <li class="product reveal" data-categoria="doces">
+          <div class="product-media"><img src="assets/img/tomates.jpg" alt="Conserva de pimenta biquinho" loading="lazy" style="object-position: left top;"></div>
+          <div class="product-info">
+            <h3>Conserva de pimenta biquinho</h3>
+            <p class="product-meta">Produção própria · 250 g</p>
+            <p class="product-price">R$ 14,00</p>
+          </div>
+        </li>
+        <li class="product reveal" data-categoria="bebidas">
+          <div class="product-media"><img src="assets/img/vinho.jpg" alt="Suco de uva integral" loading="lazy" style="object-position: right bottom;"></div>
+          <div class="product-info">
+            <h3>Suco de uva integral</h3>
+            <p class="product-meta">Colombo · 1 L</p>
+            <p class="product-price">R$ 18,00</p>
+          </div>
+        </li>
+      </ul>
+      <p id="sem-resultado" class="sem-resultado" hidden>Nada encontrado. Tente outro termo ou fale conosco no WhatsApp.</p>
+
+      <div class="catalog-cta">
+        <p>Quer reservar algum item para retirar na loja?</p>
+        <a class="btn" href="https://wa.me/5541991234567?text=Ol%C3%A1!%20Gostaria%20de%20reservar%20um%20produto." target="_blank" rel="noopener">Pedir pelo WhatsApp</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== RODAPÉ ===== -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <p class="footer-big">Até logo.</p>
+      <div class="footer-cols">
+        <div>
+          <h4>Mercearia do Seu Zé</h4>
+          <p>Rua Marechal Deodoro, 452<br>Centro, Curitiba/PR</p>
+        </div>
+        <div>
+          <h4>Navegue</h4>
+          <a href="index.html#produtos">Produtos</a>
+          <a href="produtos.html">Catálogo</a>
+          <a href="sobre.html">Nossa história</a>
+          <a href="index.html#visite">Visite</a>
+        </div>
+        <div>
+          <h4>Redes</h4>
+          <ul class="social-links" aria-label="Redes sociais">
+            <li><a href="https://instagram.com/merceariadoseuze" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://facebook.com/merceariadoseuze" target="_blank" rel="noopener">Facebook</a></li>
+            <li><a href="https://wa.me/5541991234567" target="_blank" rel="noopener">WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="ano-atual">2026</span> Mercearia do Seu Zé. Todos os direitos reservados.</p>
+      <p>Site por Daniel Ribeiro da Costa, Lucas Markovicz Costa e Ricardo Medeiros Marcato — Eng. de Software, Universidade Positivo.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
